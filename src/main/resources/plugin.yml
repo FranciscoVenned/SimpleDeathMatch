@@ -1,0 +1,15 @@
+name: SimpleDeathMatch
+version: '${project.version}'
+main: com.venned.simpledeathmatch.Main
+api-version: '1.21'
+commands:
+  check:
+    description: available manager
+  available:
+    description: available
+  edit:
+    description: Edit Arena Manager
+  play:
+    description: Play Menu
+  editkit:
+    description: Edit Kit

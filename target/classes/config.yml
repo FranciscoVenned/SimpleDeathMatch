@@ -1,0 +1,72 @@
+server: LOBBY # SERVER NAME BUNGEECORD
+server-LOBBY: HUB # server that will be sent after dying
+
+isLobby: true
+
+database:
+  host: "localhost"
+  port: 3306
+  database: "death_match"
+  username: "root"
+  password: "123456"
+
+glow-colors: # DEBE SER COMPATIBLE COLORS DE CHATCOLOR
+  - AQUA
+  - RED
+  - GREEN
+
+regeneration-per-kill:
+  level: 3
+  duration: 5
+
+set-blocks:
+  - DIRT
+  - STONE
+
+levelSystem:
+  forSecondStar: 100
+  forNextStar: 250
+  everyFiveStarsDifficultyAdder: 300
+  starAmountDifficultyLimit: 10
+
+xp:
+  KILL: 10
+  WIN: 30
+  PLAYTIME: 5
+
+starPrestiges:
+  '1': '&7[%stars%★]'
+  '100': '&f[%stars%★]'
+  '200': '&c[%stars%★]'
+  '300': '&2[%stars%★]'
+  '400': '&9[%stars%★]'
+  '500': '&e[%stars%★]'
+  '600': '&d[%stars%★]'
+  '700': '&3[%stars%★]'
+  '800': '&4[%stars%★]'
+  '900': '&6[%stars%★]'
+
+
+supply-drops-loot:
+  - APPLE:5
+  - IRON_SWORD:1
+  - ENDER_PEARL:5
+
+arenas:
+  1:
+    amount_drop: 5 # Items drop in the supply drop
+    time_drop: 100 # Time in Seconds Drop Supply
+    type: SOLO
+    world: world
+    lobby: 1478,60,147
+    spawn-points:
+      1: 1678,80,147
+      2: 1632,90,247
+      3: 1478,40,234
+      4: 1357,50,238
+    supply-drops:
+      1: 1678,80,147
+      2: 1632,90,247
+      3: 1478,40,234
+      4: 1357,50,238
+
